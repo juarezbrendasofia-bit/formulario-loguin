@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Crea tu cuenta completando el formulario de registro.">
+    <meta name="theme-color" content="#f4f6fb">
+    <title>Crear cuenta | Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <a class="marca" href="index.html" aria-label="Inicio del registro">Registro</a>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="tarjeta tarjeta-registro" aria-labelledby="titulo-registro">
+            <header class="encabezado-tarjeta">
+                <p class="sobrelinea">Comienza aquí</p>
+                <h1 id="titulo-registro">Crear cuenta</h1>
+                <p class="texto-secundario">Completa tus datos para habilitar tu acceso.</p>
+            </header>
+
+            <form class="formulario" onsubmit="capturarDatos(event)">
+                <section class="grupo-campos" aria-label="Datos personales">
+                    <label class="campo" for="email">
+                        <span class="etiqueta-campo">Correo electrónico</span>
+                        <input
+                            class="control"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="nombre@correo.com"
+                            autocomplete="email"
+                            required>
+                    </label>
+
+                    <label class="campo" for="edad">
+                        <span class="etiqueta-campo">Edad</span>
+                        <input
+                            class="control"
+                            type="number"
+                            name="edad"
+                            id="edad"
+                            placeholder="18"
+                            min="18"
+                            inputmode="numeric"
+                            required>
+                    </label>
+                </section>
+
+                <section class="grupo-campos" aria-label="Seguridad de la cuenta">
+                    <label class="campo" for="contrasenia">
+                        <span class="etiqueta-campo">Contraseña</span>
+                        <input
+                            class="control"
+                            type="password"
+                            name="contrasenia"
+                            id="contrasenia"
+                            placeholder="Escribe tu contraseña"
+                            autocomplete="new-password"
+                            required>
+                    </label>
+
+                    <label class="campo" for="confirmar-contrasenia">
+                        <span class="etiqueta-campo">Confirmar contraseña</span>
+                        <input
+                            class="control"
+                            type="password"
+                            name="confirmar-contrasenia"
+                            id="confirmar-contrasenia"
+                            placeholder="Vuelve a escribir tu contraseña"
+                            autocomplete="new-password"
+                            required>
+                    </label>
+                </section>
+
+                <button class="boton boton-principal" type="submit">Crear usuario</button>
+                <p class="nota-seguridad">Tus datos se utilizarán para crear tu cuenta.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Todos los derechos reservados a Brenda.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

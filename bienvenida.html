@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bienvenida a tu cuenta. Tu registro se completó correctamente.">
+    <meta name="theme-color" content="#f4f6fb">
+    <title>Bienvenida | Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <a class="marca" href="index.html" aria-label="Inicio del registro">Registro</a>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="tarjeta tarjeta-bienvenida" aria-labelledby="titulo-bienvenida">
+            <p class="icono-exito" aria-hidden="true">✓</p>
+            <p class="sobrelinea">Cuenta creada</p>
+            <h1 id="titulo-bienvenida">¡Bienvenid@!</h1>
+            <p class="texto-secundario">Tu registro se completó correctamente. Ya puedes comenzar a utilizar tu cuenta.</p>
+
+            <section class="estado-cuenta" aria-label="Estado de la cuenta">
+                <span class="indicador-activo" aria-hidden="true"></span>
+                <p>Tu cuenta está activa</p>
+            </section>
+
+            <button class="boton boton-secundario" type="button" onclick="logout()">Cerrar sesión</button>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Todos los derechos reservados a Brenda.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
